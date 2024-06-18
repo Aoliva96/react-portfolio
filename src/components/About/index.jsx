@@ -4,28 +4,20 @@ function About() {
     <section>
       <div>
         <div
+          className="profile-img my-5"
           style={{
             display: "flex",
-            justifyContent: "space-between",
-            marginTop: "5px",
-            marginBottom: "5px",
-            minHeight: "82px",
-            paddingLeft: "2rem",
-            paddingRight: "2rem",
             backgroundColor: "var(--alpha-dark)",
             borderRadius: "48px",
             alignItems: "center",
           }}
         >
-          <h2>Welcome to my portfolio!</h2>
-          <p>
-            <a
-              href="https://github.com/Aoliva96/react-portfolio"
-              target="_blank"
-            >
-              ( Click here to view the GitHub repository )
-            </a>
-          </p>
+          <a href="https://github.com/Aoliva96/react-portfolio" target="_blank">
+            <i className="fab fa-github" style={{ fontSize: "96px" }} />
+          </a>
+          <h2 style={{ marginLeft: "2rem" }}>
+            Professional portfolio for Aster Oliva
+          </h2>
         </div>
         <hr style={{ marginTop: "2.5rem" }} />
         <div>
