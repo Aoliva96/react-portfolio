@@ -16,7 +16,7 @@ function Portfolio() {
       name: "ANA Market",
       description: "React/JavaScript/GraphQL/MongoDB",
       link: "https://ana-market-eae58deca7b8.herokuapp.com/",
-      repo: "https://github.com/Aoliva96/recall-rocket",
+      repo: "https://github.com/Aoliva96/ana-market",
     },
     {
       // Group project
@@ -38,16 +38,16 @@ function Portfolio() {
       repo: "https://github.com/Aoliva96/code-quiz",
     },
     {
-      name: "Workday Scheduler",
-      description: "HTML/CSS/JQuery",
-      link: "http://youtube.com",
-      repo: "https://github.com/Aoliva96/workday-scheduler",
-    },
-    {
       name: "Weather Dashboard",
       description: "HTML/CSS/JavaScript",
       link: "https://Aoliva96.github.io/weather-dashboard/",
       repo: "https://github.com/Aoliva96/weather-dashboard",
+    },
+    {
+      name: "Workday Scheduler",
+      description: "HTML/CSS/JQuery",
+      link: "http://youtube.com",
+      repo: "https://github.com/Aoliva96/workday-scheduler",
     },
     {
       name: "Note Taker",

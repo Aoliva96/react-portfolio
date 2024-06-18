@@ -9,12 +9,15 @@ function About() {
         <div>
           <h4>Hi there, welcome to my portfolio!</h4>
           <p>
-            <a href="https://github.com/Aoliva96/react-portfolio">
-              Click to view my GitHub repository for this project.
+            <a
+              href="https://github.com/Aoliva96/react-portfolio"
+              target="_blank"
+            >
+              Click to view its GitHub repository.
             </a>
           </p>
         </div>
-        <hr />
+        <hr class="my-2" />
         <div>
           <h4>About Me</h4>
           <p>

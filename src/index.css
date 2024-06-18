@@ -38,7 +38,7 @@ body {
   color: var(--light);
   font-family: "Open Sans", sans-serif;
   background: var(--darker);
-  background-image: url("./assets/cover/cover-image.png");
+  background-image: url("./assets/banner/banner-image.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -324,6 +324,22 @@ footer a:hover {
   margin-bottom: var(--spacing-five);
 }
 
+.mt-1 {
+  margin-top: var(--spacing-one);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-two);
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-one);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-two);
+}
+
 /* Padding */
 .px-1 {
   padding-right: var(--spacing-one);
@@ -342,6 +358,22 @@ footer a:hover {
 
 .py-2 {
   padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+}
+
+.pt-1 {
+  padding-top: var(--spacing-one);
+}
+
+.pt-2 {
+  padding-top: var(--spacing-two);
+}
+
+.pb-1 {
+  padding-bottom: var(--spacing-one);
+}
+
+.pb-2 {
   padding-bottom: var(--spacing-two);
 }
 
