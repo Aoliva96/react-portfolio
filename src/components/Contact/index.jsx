@@ -50,6 +50,7 @@ function Contact() {
           <input
             type="text"
             name="name"
+            id="name"
             defaultValue={name}
             onBlur={handleChange}
           />
@@ -59,6 +60,7 @@ function Contact() {
           <input
             type="email"
             name="email"
+            id="email"
             defaultValue={email}
             onBlur={handleChange}
           />
@@ -68,6 +70,7 @@ function Contact() {
           <textarea
             name="message"
             rows="5"
+            id="message"
             defaultValue={message}
             onBlur={handleChange}
           />

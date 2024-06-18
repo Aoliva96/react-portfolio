@@ -6,7 +6,7 @@ function Portfolio() {
   const [projects] = useState([
     {
       // Group project
-      name: "RecallRocket",
+      name: "Recall Rocket",
       description: "React/JavaScript/GraphQL/MongoDB",
       link: "https://recall-rocket.onrender.com/",
       repo: "https://github.com/Aoliva96/recall-rocket",

@@ -8,11 +8,13 @@ export default function Error() {
   // JSX for Error component
   return (
     <div id="error-page">
-      <h1>Sorry!</h1>
-      <p>There was an unexpected error delivering the requested content.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
+      <div className="container">
+        <h1>Sorry!</h1>
+        <p>There was an unexpected error delivering the requested content.</p>
+        <p>
+          <i>{error.statusText || error.message}</i>
+        </p>
+      </div>
     </div>
   );
 }

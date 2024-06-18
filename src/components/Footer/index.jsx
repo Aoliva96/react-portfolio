@@ -17,17 +17,19 @@ function Footer() {
 
   // JSX for Footer component
   return (
-    <footer className="flex-row px-1">
-      {icons.map((icon) => (
-        <a
-          href={icon.link}
-          key={icon.name}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className={icon.name}></i>
-        </a>
-      ))}
+    <footer className="flex-row px-1 pb-2">
+      <div style={{ marginBottom: "1rem" }}>
+        {icons.map((icon) => (
+          <a
+            href={icon.link}
+            key={icon.name}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className={icon.name}></i>
+          </a>
+        ))}
+      </div>
     </footer>
   );
 }

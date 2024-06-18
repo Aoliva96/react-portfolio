@@ -7,6 +7,7 @@
   --dark: #22223b;
   --darker: #384dd6;
   --alpha: rgba(255, 255, 255, 0.7);
+  --alpha-dark: rgba(0, 0, 0, 0.5);
   --error: #d62828;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -38,7 +39,7 @@ body {
   color: var(--light);
   font-family: "Open Sans", sans-serif;
   background: var(--darker);
-  background-image: url("./assets/banner/banner-image.png");
+  background-image: url("./assets/banner/banner-img.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -187,18 +188,15 @@ li {
 /* Header */
 header {
   height: 250px;
-  position: Left;
+  position: relative;
   overflow: hidden;
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--dark);
-}
-
-header a {
-  color: var(--light);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 header h1 {
@@ -206,8 +204,6 @@ header h1 {
   z-index: 2;
   text-align: center;
   max-width: 80%;
-  font-size: 2rem;
-  font-size: 4vw;
 }
 
 header img {
@@ -215,7 +211,9 @@ header img {
   position: absolute;
   top: 0;
   left: 0;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   filter: sepia(1) opacity(60%);
   opacity: 0.5;
 }
@@ -231,9 +229,17 @@ nav {
 }
 
 .navActive {
-  color: var(--secondary);
   cursor: default;
-  text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.5);
+  text-shadow: var(--alpha-dark) 2px 2px 10px;
+  background-color: var(--alpha);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 48px;
+}
+
+.navActive a {
+  font-weight: bold;
+  color: #000 !important;
 }
 
 nav a:hover {
@@ -299,6 +305,14 @@ footer a:hover {
 }
 
 /* Margin */
+.m-1 {
+  margin: var(--spacing-one);
+}
+
+.m-2 {
+  margin: var(--spacing-two);
+}
+
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -341,6 +355,14 @@ footer a:hover {
 }
 
 /* Padding */
+.p-1 {
+  padding: var(--spacing-one);
+}
+
+.p-2 {
+  padding: var(--spacing-two);
+}
+
 .px-1 {
   padding-right: var(--spacing-one);
   padding-left: var(--spacing-one);
@@ -467,17 +489,4 @@ footer a:hover {
     text-align: center;
     font-size: 2.3rem;
   }
-}
-
-/* Duplicate header tags, for media queries? */
-header {
-  position: relative;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-}
-header img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
