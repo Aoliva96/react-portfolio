@@ -8,7 +8,7 @@ function Nav({ currentPage }) {
   // JSX for Nav component
   return (
     <nav>
-      <ul className="flex-row">
+      <ul>
         <li
           className={`mx-5 ${currentPage === "/" && "navActive"}`}
           key="about"

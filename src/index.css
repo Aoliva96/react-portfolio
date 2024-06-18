@@ -5,7 +5,7 @@
   --tertiary: #9a8cfe;
   --light: #e0e1dd;
   --dark: #22223b;
-  --darker: #384dd6;
+  --darker: #6e0061;
   --alpha: rgba(255, 255, 255, 0.7);
   --alpha-dark: rgba(0, 0, 0, 0.5);
   --error: #d62828;
@@ -104,7 +104,7 @@ p {
 a {
   color: var(--light);
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 a:hover {
@@ -187,7 +187,7 @@ li {
 
 /* Header */
 header {
-  height: 250px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -223,9 +223,8 @@ nav {
   position: relative;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-size: 2.5rem;
-  margin: 30px 20px;
-  justify-content: center;
+  font-size: 2rem;
+  width: 866px;
 }
 
 .navActive {
@@ -246,10 +245,18 @@ nav a:hover {
   text-decoration: none;
 }
 
+nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav li {
   cursor: pointer;
+  margin: 0 1rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  margin: 0 50px;
 }
 
 ul.skills {
@@ -416,6 +423,8 @@ footer a:hover {
 
 .project-bg {
   position: relative;
+  border: 3px solid var(--darker);
+  border-radius: 5px;
   width: 100%;
   height: 100%;
 }
@@ -430,13 +439,14 @@ footer a:hover {
   padding: 50px;
   z-index: 900;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  transition: all 0.4s linear;
 }
 
 .project-text:hover {
   background-color: var(--alpha);
   opacity: 1;
-  border: 10px solid var(--secondary);
+  border: 6px solid var(--darker);
 }
 
 .project-text h3 {
@@ -455,38 +465,31 @@ footer a:hover {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1100px) {
   nav {
-    position: static;
-    display: block;
-    z-index: 100;
-    margin: 0 10px;
-    font-size: 1.3rem;
-  }
-  header h1 {
-    display: block;
-    margin: 5px 10px;
-    height: 15px;
-    width: 100%;
-    text-align: center;
-    font-size: 2.3rem;
+    width: 80%;
+    font-size: 1.5rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 870px) {
   nav {
-    position: static;
-    display: block;
-    z-index: 100;
-    margin: 0 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
-  header h1 {
-    display: block;
-    margin: 5px 10px;
-    height: 15px;
-    width: 100%;
-    text-align: center;
-    font-size: 2.3rem;
+}
+
+@media only screen and (max-width: 730px) {
+  header {
+    height: 250px;
+  }
+  nav {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
   }
 }

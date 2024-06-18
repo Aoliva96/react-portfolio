@@ -71,11 +71,29 @@ function Portfolio() {
 
   // JSX for the Portfolio component
   return (
-    <div>
-      <div className="flex-row">
-        {projects.map((project, idx) => (
-          <Project project={project} key={"project" + idx} />
-        ))}
+    <div className="my-5">
+      <hr style={{ marginTop: "2.5rem" }} />
+      <div
+        style={{
+          backgroundColor: "var(--alpha-dark)",
+          borderRadius: "48px",
+          marginTop: "2.5rem",
+          padding: "1rem",
+        }}
+      >
+        <div className="flex-row">
+          <div>
+            <p style={{ width: "85%", margin: "1.3rem auto" }}>
+              See below for several of my favorite projects I've worked on so
+              far! Clicking on the project's name will take you to its deployed
+              live version, and clicking on the adjacent GitHub logo will take
+              you to the repo.
+            </p>
+          </div>
+          {projects.map((project, idx) => (
+            <Project project={project} key={"project" + idx} />
+          ))}
+        </div>
       </div>
     </div>
   );

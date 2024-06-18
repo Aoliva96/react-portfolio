@@ -1,13 +1,15 @@
 function About() {
   // JSX for About component
   return (
-    <section className="my-5">
-      <div className="my-2">
+    <section>
+      <div>
         <div
           style={{
             display: "flex",
             justifyContent: "space-between",
-            minHeight: "96px",
+            marginTop: "5px",
+            marginBottom: "5px",
+            minHeight: "82px",
             paddingLeft: "2rem",
             paddingRight: "2rem",
             backgroundColor: "var(--alpha-dark)",

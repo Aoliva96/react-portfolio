@@ -7,7 +7,7 @@ export default function Error() {
 
   // JSX for Error component
   return (
-    <div id="error-page">
+    <div id="error-page" style={{ height: "100vh" }}>
       <div className="container">
         <h1>Sorry!</h1>
         <p>There was an unexpected error delivering the requested content.</p>

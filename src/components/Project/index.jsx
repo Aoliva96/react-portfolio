@@ -25,6 +25,7 @@ function Project({ project }) {
         src={projectImages[pathName]}
         alt={noHyphensAllCaps(name)}
         className="project-bg"
+        style={{ borderRadius: "10px" }}
       />
       <div className="project-text">
         <h3>
