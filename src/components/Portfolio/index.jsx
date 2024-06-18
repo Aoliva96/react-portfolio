@@ -83,7 +83,7 @@ function Portfolio() {
       >
         <div className="flex-row">
           <div>
-            <p style={{ width: "85%", margin: "1.3rem auto" }}>
+            <p style={{ width: "85%", margin: "2rem auto" }}>
               See below for several of my favorite projects I've worked on so
               far! Clicking on the project's name will take you to its deployed
               live version, and clicking on the adjacent GitHub logo will take
